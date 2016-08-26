@@ -4770,7 +4770,7 @@ p {
   margin-top: 19px;
   margin-left: -15px;
   z-index: 9999;
-  border-top: 3px solid #c7081b;
+  border-top: 3px solid #4CAF50;
 }
 .navbar-left .dropdown-menu a {
   color: #ffffff;
@@ -4778,7 +4778,7 @@ p {
 .navbar-left .dropdown-menu a:hover,
 .navbar-left .dropdown-menu a:focus,
 .navbar-left .dropdown-menu a:active {
-  color: #c7081b;
+  color: #4CAF50;
   background-color: #343434;
 }
 .navbar-left .dropdown-menu a:hover::after,
@@ -4819,7 +4819,7 @@ p {
 .navbar-left a:hover,
 .navbar-left a:focus,
 .navbar-left a:active {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .navbar-left a:hover::after {
   content: " ";
@@ -4828,7 +4828,7 @@ p {
   right: 0%;
   bottom: -22px;
   z-index: 1;
-  border-bottom: 3px solid #c7081b;
+  border-bottom: 3px solid #4CAF50;
   height: 23px;
 }
 .navbar-right {
@@ -4952,7 +4952,7 @@ p {
   font-size: 14px;
 }
 .ct-infoTableSection a:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-infoTableSection a:focus {
   outline: none;
@@ -5274,7 +5274,7 @@ h1.white-header {
   overflow: hidden;
 }
 .ct-videoSection a h6:hover {
-  color: #c7081b;
+  color: #4CAF50;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -5321,14 +5321,14 @@ h1.white-header {
 }
 .person-box a:hover h3,
 .person-box a:hover h6 {
-  color: #c7081b;
+  color: #4CAF50;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .person-box a:hover img {
-  border: 2px solid #c7081b;
+  border: 2px solid #4CAF50;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -5390,7 +5390,7 @@ h1.white-header {
   line-height: 24px;
 }
 .ct-mapSection .ct-widget-contact--map a h4:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-mapSection .ct-widget-contact--map h6.address,
 .ct-mapSection .ct-widget-contact--map h6.phone {
@@ -5619,7 +5619,7 @@ h1.white-header {
   font-weight: 400;
 }
 .ct-historyPost .history-date {
-  color: #c7081b;
+  color: #4CAF50;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.1;
@@ -5701,7 +5701,7 @@ h1.white-header {
   color: black;
 }
 .ct-categories table a:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 p {
   font-family: 'Open Sans', sans-serif;
@@ -5738,10 +5738,10 @@ p {
 .ct-pagination a:hover,
 .ct-pagination a:active,
 .ct-pagination a:focus {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-pagination .active a {
-  color: #c7081b;
+  color: #4CAF50;
   cursor: default;
 }
 .ct-pagination ul {
@@ -5760,7 +5760,7 @@ p {
 blockquote.ct-description--header,
 blockquote.ct-blogPost--quotation {
   padding-left: 100px;
-  color: #c7081b;
+  color: #4CAF50;
   border: 0;
   font-size: 36px;
   line-height: 1.2 !important;
@@ -5841,24 +5841,24 @@ button:active {
 .btn-white:hover,
 .btn-white:focus,
 .btn-white:active {
-  border: 2px solid #c7081b;
-  color: #c7081b;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
 }
 .btn-slider--motive {
-  background-color: #c7081b;
-  border-color: #c7081b;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
 }
 .btn-slider--motive:hover,
 .btn-slider--motive:focus,
 .btn-slider--motive:active {
-  color: #c7081b;
+  color: #4CAF50;
   background-color: #ffffff;
   border: 2px solid #ffffff;
 }
 .btn-motive {
   background-color: transparent;
-  border: 2px solid #c7081b;
-  color: #c7081b;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
   padding: 13px 16px;
   letter-spacing: 0;
 }
@@ -5878,8 +5878,8 @@ button:active {
 .btn-black:hover,
 .btn-black:focus,
 .btn-black:active {
-  border: 2px solid #c7081b;
-  color: #c7081b;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
 }
 .ct-btnScrollUp {
   position: fixed;
@@ -6130,7 +6130,7 @@ input[type="checkbox"] {
 .ct-menuMobile li a:hover,
 .ct-menuMobile li a:focus,
 .ct-menuMobile li a:active {
-  color: #c7081b;
+  color: #4CAF50;
   background-color: #343434;
 }
 .ct-menuMobile li a:hover::after,
@@ -6193,7 +6193,7 @@ input[type="checkbox"] {
   margin: 0;
   margin-left: -11px;
   z-index: 2;
-  border-top: 3px solid #c7081b;
+  border-top: 3px solid #4CAF50;
 }
 .ct-menuMobile .panel-collapse a {
   color: #ffffff;
@@ -6201,7 +6201,7 @@ input[type="checkbox"] {
 .ct-menuMobile .panel-collapse a:hover,
 .ct-menuMobile .panel-collapse a:focus,
 .ct-menuMobile .panel-collapse a:active {
-  color: #c7081b;
+  color: #4CAF50;
   background-color: #343434;
 }
 .ct-menuMobile .panel-collapse a:hover::after,
@@ -6334,7 +6334,7 @@ input[type="checkbox"] {
   .navbar-form .form-group .btn-search:hover,
   .ct-navSearcher .form-group .btn-search:hover {
     background-color: transparent;
-    color: #c7081b;
+    color: #4CAF50;
   }
   .navbar-main:after {
     display: none;
@@ -6402,7 +6402,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
 }
 .blog-Post:hover a h4,
 .blog-Post:hover a h6 {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-widget-header {
   letter-spacing: 1.2px;
@@ -6531,7 +6531,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   font-size: 20px;
 }
 .ct-widget-statictics .title {
-  color: #c7081b;
+  color: #4CAF50;
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
@@ -6600,7 +6600,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   list-style: none;
 }
 .ct-formAppointment span {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-formAppointment .label-checkbox {
   float: left;
@@ -6755,7 +6755,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   font-weight: 700;
 }
 .ct-blog-post .ct-blog-post--body .ct-blog-post--title h1 a:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-blog-post .ct-blog-post--body .ct-blog-post--content p {
   font-family: 'Open Sans', sans-serif;
@@ -6948,7 +6948,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   padding-left: 5px;
 }
 .ct-blog-post--contentLong .ct-commentBox a:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-blog-post--contentLong .ct-comenntBox--indent {
   padding-left: 20px;
@@ -6967,7 +6967,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   float: left;
 }
 .ct-blog-post--contentLong .ct-formComment span {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-blog-post--contentLong .ct-formComment .ct-input {
   border-style: solid;
@@ -7022,7 +7022,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   font-weight: 700 !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px !important;
-  color: #c7081b !important;
+  color: #4CAF50 !important;
   margin-top: 20px;
   display: inline-block;
 }
@@ -7077,7 +7077,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
   color: black;
 }
 .widget.widget_categories a:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .widget.widget_recent_post li,
 .widget.widget-short-message li {
@@ -7132,7 +7132,7 @@ nav.navbar .dropdown-menu li:last-child a:after {
 }
 .widget.widget_recent_post a:hover > *,
 .widget.widget-short-message a:hover > * {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .widget.widget_tag_cloud .tagcloud a {
   color: #272727;
@@ -7238,7 +7238,7 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
-  color: #c7081b;
+  color: #4CAF50;
 }
 footer ul {
   font-size: 20px;
@@ -7401,7 +7401,7 @@ footer ul {
 .slick-arrow:hover,
 .slick-arrow:active,
 .slick-arrow:focus {
-  background-color: #c7081b;
+  background-color: #4CAF50;
   outline: none;
 }
 .slick-next {
@@ -7443,7 +7443,7 @@ footer ul {
 .slick-dots button:hover,
 .slick-dots button:active,
 .slick-dots button:focus {
-  background-color: #c7081b;
+  background-color: #4CAF50;
   outline: none;
 }
 .slick-dots li {
@@ -7459,7 +7459,7 @@ footer ul {
   left: 390px;
 }
 li.slick-active button {
-  background-color: #c7081b;
+  background-color: #4CAF50;
   outline: none;
 }
 @media (max-width: 1200px) {
@@ -7532,7 +7532,7 @@ li.slick-active button {
 .media.offers:hover .media-body .media-heading,
 .media.appointment:hover .media-body .media-heading,
 .media.about:hover .media-body .media-heading {
-  color: #c7081b;
+  color: #4CAF50;
   transition: all .3s ease;
 }
 .media.directions .media-left img {
@@ -7560,7 +7560,7 @@ li.slick-active button {
 }
 .ct-priceSection .ct-priceSection-header h6 {
   font-family: 'Montserrat', sans-serif;
-  color: #c7081b;
+  color: #4CAF50;
   font-weight: 700;
   margin-top: 17px;
   margin-bottom: 42px;
@@ -7602,7 +7602,7 @@ li.slick-active button {
 }
 .ct-priceSection .ct-pricingBox .ct-pricingBox-header h1,
 .ct-priceSection .ct-pricingBox .ct-pricingBox-header .price-amount {
-  color: #c7081b;
+  color: #4CAF50;
   font-size: 48px;
   margin: 10px 0;
 }
@@ -7849,7 +7849,7 @@ li.slick-active button {
 }
 .warning-description h6 {
   font-family: 'Montserrat', sans-serif;
-  color: #c7081b;
+  color: #4CAF50;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -7972,7 +7972,7 @@ li.slick-active button {
 .breadcrumb a:hover,
 .breadcrumb a:active,
 .breadcrumb a:focus {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-careersSection {
   /*  .ct-jobDescription:after{
@@ -8038,7 +8038,7 @@ li.slick-active button {
 }
 .ct-careersSection ul li:before {
   content: "•";
-  color: #c7081b;
+  color: #4CAF50;
   /* or whatever color you prefer */
   padding-right: 10px;
 }
@@ -8052,11 +8052,11 @@ li.slick-active button {
   margin-top: 20px;
 }
 .ct-careersSection .ct-siteMenu .active-link {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-careersSection .ct-siteMenu li.active-link:before {
   content: "•";
-  color: #c7081b;
+  color: #4CAF50;
   padding-right: 10px;
 }
 .ct-careersSection .ct-siteMenu a {
@@ -8071,7 +8071,7 @@ li.slick-active button {
 .ct-careersSection .ct-siteMenu a:focus,
 .ct-careersSection .ct-siteMenu a:hover,
 .ct-careersSection .ct-siteMenu a:active {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-careersSection .ct-siteMenu li:before {
   content: "•";
@@ -8080,10 +8080,10 @@ li.slick-active button {
   padding-right: 10px;
 }
 .ct-careersSection .ct-siteMenu li:hover::before {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-careersSection .ct-siteMenu li:hover a {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-careersSection .ct-widget-blogPosts {
   margin-left: 60px;
@@ -8099,7 +8099,7 @@ li.slick-active button {
 }
 .ct-careersSection .ct-linkHeader {
   font-family: 'Montserrat', sans-serif;
-  color: #c7081b;
+  color: #4CAF50;
   font-size: 12px;
 }
 .ct-careersSection .ct-linkHeader i {
@@ -8113,7 +8113,7 @@ li.slick-active button {
   font-family: 'Open Sans', sans-serif;
 }
 .ct-widget-iconInfoBox img {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-widget-iconInfoBox .ct-widget-header {
   font-size: 20px;
@@ -8128,7 +8128,7 @@ li.slick-active button {
   line-height: 20px;
 }
 .ct-widget-iconInfoBox .ct-widget-header:after {
-  border-bottom: 3px solid #c7081b;
+  border-bottom: 3px solid #4CAF50;
 }
 @media (max-width: 1199px) {
   .ct-widget-iconInfoBox {
@@ -8146,7 +8146,7 @@ li.slick-active button {
   padding: 40px 50px 50px;
 }
 .ct-jobDescription--list .ct-widget-header:after {
-  border-bottom-color: #c7081b;
+  border-bottom-color: #4CAF50;
 }
 .ct-jobDescription--list ul {
   margin-bottom: 0;
@@ -8162,7 +8162,7 @@ li.slick-active button {
   content: "\f00c";
   /* FontAwesome Unicode */
   font-family: FontAwesome;
-  color: #c7081b;
+  color: #4CAF50;
   padding-right: 10px;
   display: inline-block;
   margin-left: -1.3em;
@@ -11217,7 +11217,7 @@ img:active {
   color: #808080;
 }
 .ct-u-colorMotive {
-  color: #c7081b;
+  color: #4CAF50;
 }
 .ct-u-colorLightGray {
   color: #343434;
@@ -11256,7 +11256,7 @@ img:active {
   background-color: #f8f8f8;
 }
 .ct-u-backgroundMotive {
-  background-color: #c7081b;
+  background-color: #4CAF50;
 }
 .ct-u-backgroundBeige {
   background-color: #fcfcfc;
@@ -11349,7 +11349,7 @@ img:active {
   transform: all 0.3s ease;
 }
 .ct-tablet-searcher:hover {
-  color: #c7081b;
+  color: #4CAF50;
   background-color: transparent;
 }
 @media (max-width: 1200px) {
@@ -11379,7 +11379,7 @@ img:active {
   color: #333;
 }
 .ct-header-contact li a:hover {
-  color: #c7081b;
+  color: #4CAF50;
 }
 @media (max-width: 991px) {
   .ct-header-contact {
@@ -11484,7 +11484,7 @@ body.boxed .ct-pageWrapper,
   height: 90px;
 }
 .open-days {
-  color: #c7081b;
+  color: #4CAF50;
   font-size: 20px;
   font-weight: 500;
   margin-top: 0;

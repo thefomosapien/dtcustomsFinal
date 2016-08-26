@@ -325,7 +325,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode({'address': marker_address}, function (results, status) {
                 if (status === google.maps.GeocoderStatus.OK) {
-                    var image = 'assets/images/content/marker_icon.png';
+                    var image = 'assets/images/marker_icon.png';
                     marker = new google.maps.Marker({
                         position: new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng()),
                         map: map,
