@@ -900,7 +900,7 @@ Files are bundled inside style.css and main.js
                         <li><a href="preventive_maintenance.html">Preventive Maintenance</a></li>
                         <li><a href="oil_change.html">Oil Change</a></li>
                         <li><a href="tires.html">Tires &amp; Tire Repair</a></li>
-                        <li><a href="brakes.html">Brakes &amp; Brake Repair</a></li>
+                        <li><a href="steering.html">Brakes &amp; Brake Repair</a></li>
                         <li><a href="mufflers.html">Mufflers &amp; Exhaust</a></li>
                         <li><a href="steering.html">Steering &amp; Suspension</a></li>
                         <li><a href="batteries.html">Batteries, Starters &amp; Charging</a></li>
