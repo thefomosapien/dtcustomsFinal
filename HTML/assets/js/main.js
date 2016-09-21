@@ -35,7 +35,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
     var clickEvent = "touchstart";
 
-    if($el_html.hasClass("desktop")) {
+    if ($el_html.hasClass("desktop")) {
         clickEvent += " click";
     }
 
@@ -44,25 +44,25 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         var dtarget = $('[data-target]');
 
-        dtarget.each(function(){
+        dtarget.each(function () {
             var that = $(this),
                 target = that.attr("data-target");
 
             if (target) {
 
-                var $target = $("#"+target);
+                var $target = $("#" + target);
 
-                if($target.length) {
+                if ($target.length) {
 
                     var firstOption = $("<option disabled selected>Select model...</option>");
 
-                    that.change(function(){
+                    that.change(function () {
 
                         var value = that.val();
 
                         value = value.toLowerCase();
 
-                        if(value) {
+                        if (value) {
                             $target.html("");
 
                             $target.append(firstOption);
@@ -73,12 +73,12 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
                             $.ajax({
                                 "url": jsonUrl,
                                 data: {
-                                    
+
                                 },
                                 "success": function success(result) {
 
 
-                                    if (result.success) {                                       
+                                    if (result.success) {
 
                                         var res = result.results;
 
@@ -88,7 +88,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
                                                 var submodels = res[i].submodel;
 
-                                                for (var j = 0, len = submodels.length; j < len; ++j){
+                                                for (var j = 0, len = submodels.length; j < len; ++j) {
                                                     var option = $("<option></option>");
 
                                                     option.attr("value", submodels[j]).text(submodels[j]);
@@ -114,7 +114,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         var datapicker = $('.datepicker');
 
-        if(datapicker.length) {
+        if (datapicker.length) {
             datapicker.datepicker({
                 format: 'mm/dd/yyyy'
             });
@@ -136,7 +136,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         var cuppons = $(".ct-pricingBox");
 
-        cuppons.each(function(){
+        cuppons.each(function () {
             var that = $(this),
                 button = that.find(".btn-accent");
 
@@ -154,15 +154,19 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
                 mywindow.document.close(); // necessary for IE >= 10
                 mywindow.focus(); // necessary for IE >= 10
 
-                mywindow.print();
-                mywindow.close();
+
+
+                setTimeout(function () {
+                    newWindow.print();
+                    newWindow.close();
+                }, 250);
 
                 return true;
             })
 
         });
 
-        $(document).on(clickEvent, function(event) {
+        $(document).on(clickEvent, function (event) {
 
             // Close Admin Panel
             if (!$(event.target).closest('.ct-menuMobile').length && (!$(event.target).closest('.navbar-toggle').length)) {
@@ -171,18 +175,18 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
         });
 
 
-        $('.navbar-toggle').on(clickEvent, function(e){
+        $('.navbar-toggle').on(clickEvent, function (e) {
             e.preventDefault();
             $bodyel.addClass("is-mobile-open");
         })
 
 
 
-//search screen//---------------------------------------------------------
+        //search screen//---------------------------------------------------------
 
         $(".navbar-search").on(clickEvent, function (e) {
             e.preventDefault();
-           $('body').addClass('is-search-screen-open');
+            $('body').addClass('is-search-screen-open');
         });
 
         $(".btn-mobileSearch").on(clickEvent, function (e) {
@@ -190,7 +194,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
             $('body').removeClass('is-search-screen-open');
         });
 
-//data attributes//---------------------------------------------------------
+        //data attributes//---------------------------------------------------------
 
         if ($.browser.mozilla) {
             $el_html.addClass('browser-mozilla');
@@ -246,9 +250,9 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
 
         // Mobile Menu // -----------------------------------------
-       var $mobileEl = $('.ct-menuMobile .ct-menuMobile-navbar .dropdown > a');
+        var $mobileEl = $('.ct-menuMobile .ct-menuMobile-navbar .dropdown > a');
 
-        $mobileEl.on(clickEvent,function () {
+        $mobileEl.on(clickEvent, function () {
             return false;
         }); // iOS SUCKS
         $mobileEl.on(clickEvent, function () {
@@ -268,9 +272,9 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         var lightGalleryElement = $('.ct-js-lightGallery');
 
-        if(lightGalleryElement.length){
+        if (lightGalleryElement.length) {
             lightGalleryElement.lightGallery({
-                thumbnail:true
+                thumbnail: true
             });
         }
 
@@ -278,38 +282,38 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         var mapSelector = $(".ct-js-googleMap");
 
-        if(mapSelector.length) {
+        if (mapSelector.length) {
             var marker_address = mapSelector.attr("data-address");
             var map, bounds, marker, mapStyle, marker_icon;
             mapStyle = [{
                 "featureType": "administrative",
                 "elementType": "labels.text.fill",
-                "stylers": [{"color": "#444444"}]
-            }, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]}, {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [{"visibility": "off"}]
-            }, {
-                "featureType": "road",
-                "elementType": "all",
-                "stylers": [{"saturation": -100}, {"lightness": 45}]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [{"visibility": "simplified"}]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "labels.icon",
-                "stylers": [{"visibility": "off"}]
-            }, {"featureType": "transit", "elementType": "all", "stylers": [{"visibility": "off"}]}, {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [{"color": "#425a68"}, {"visibility": "on"}]
-            }]
+                "stylers": [{ "color": "#444444" }]
+            }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [{ "visibility": "off" }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [{ "saturation": -100 }, { "lightness": 45 }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [{ "visibility": "simplified" }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [{ "visibility": "off" }]
+                }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{ "color": "#425a68" }, { "visibility": "on" }]
+                }]
 
             var draggable = false;
 
-            if($device_width > 1200) {
+            if ($device_width > 1200) {
                 draggable = true;
             }
 
@@ -323,7 +327,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
             });
             bounds = new google.maps.LatLngBounds();
             var geocoder = new google.maps.Geocoder();
-            geocoder.geocode({'address': marker_address}, function (results, status) {
+            geocoder.geocode({ 'address': marker_address }, function (results, status) {
                 if (status === google.maps.GeocoderStatus.OK) {
                     var image = 'assets/images/marker_icon.png';
                     marker = new google.maps.Marker({
@@ -346,13 +350,13 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         $("[data-toggle='tooltip']").tooltip();
 
-        $("[data-toggle='popover']").popover({trigger: "hover", html: true});
+        $("[data-toggle='popover']").popover({ trigger: "hover", html: true });
 
 
         // Link Scroll to Section // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         function goToByScroll(id) {
-            $('html,body').animate({scrollTop: $(id).offset().top - 70}, 'slow');
+            $('html,body').animate({ scrollTop: $(id).offset().top - 70 }, 'slow');
         }
 
         $('body .ct-js-btnScroll').on(clickEvent, function () {
@@ -364,7 +368,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         $('.ct-js-btnScrollUp').on(clickEvent, function (e) {
             e.preventDefault();
-            $("body,html").animate({scrollTop: 0}, 700, "swing");
+            $("body,html").animate({ scrollTop: 0 }, 700, "swing");
             $navbarel.find('.onepage').removeClass('active');
             $navbarel.find('.onepage:first-child').addClass('active');
             return false;
@@ -377,11 +381,11 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
         if ($().placeholder) {
             $("input[placeholder],textarea[placeholder]").placeholder();
         }
- 
 
-        $(window).on("scroll", function(){
 
-            var scroll        = $(window).scrollTop(),
+        $(window).on("scroll", function () {
+
+            var scroll = $(window).scrollTop(),
                 $toTopArrow = $('.ct-js-btnScrollUp');
 
             if (scroll > 150) {
@@ -401,12 +405,12 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
     });
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
 
 
         /* Isotope */
 
-        var isotope_gallery = function() {
+        var isotope_gallery = function () {
             var isotope_filter, isotope_load;
             if ($().isotope) {
                 isotope_gallery = $('.ct-isotope-gallery');
@@ -419,7 +423,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
                         columnWidth: '.grid-sizer'
                     }
                 });
-                isotope_filter.on(clickEvent, function() {
+                isotope_filter.on(clickEvent, function () {
                     var filter_value, that;
                     that = $(this);
                     isotope_filter.removeClass('is-active');
@@ -429,7 +433,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
                         filter: filter_value
                     });
                 });
-                return isotope_load.on(clickEvent, function() {
+                return isotope_load.on(clickEvent, function () {
                     var load_name, load_page, response, that;
                     that = $(this);
                     load_name = that.attr('data-load-name');
@@ -439,16 +443,16 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
                         type: 'GET',
                         url: load_name + load_page + '.html',
                         async: false,
-                        success: function(value) {
+                        success: function (value) {
                             response = value;
                             return isotope_gallery.isotope('insert', $(response));
                         },
-                        complete: function() {
+                        complete: function () {
                             return $.ajax({
                                 type: 'GET',
                                 url: load_name + (load_page + 1) + '.html',
                                 async: false,
-                                error: function() {
+                                error: function () {
                                     return that.parent().remove();
                                 }
                             });
@@ -470,7 +474,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         $(".btn-search").on(clickEvent, function (e) {
 
-            if($devicewidth < 1200) {
+            if ($devicewidth < 1200) {
                 e.preventDefault();
                 $('body').addClass('is-search-screen-open');
 
@@ -480,7 +484,7 @@ var $devicewidth = window.innerWidth > 0 ? window.innerWidth : screen.width,
 
         $("#ct-js-menu-button").on(clickEvent, function (e) {
 
-            if($devicewidth < 1200) {
+            if ($devicewidth < 1200) {
                 e.preventDefault();
                 $('body').addClass('is-search-screen-open');
 
